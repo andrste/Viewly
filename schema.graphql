@@ -1,0 +1,26 @@
+type TokenTransfer @entity {
+  id: ID!
+  from: String!
+  to: String!
+  amount: BigDecimal!
+  timestamp: BigInt!
+}
+
+type TokenApproval @entity {
+  id: ID!
+  owner: String!
+  spender: String!
+  amount: BigDecimal!
+}
+
+type VMint @entity {
+  id: ID!
+  address: String!
+  amount: BigDecimal!
+}
+
+type VBurn @entity {
+  id: ID!
+  address: String!
+  amount: BigDecimal!
+}
